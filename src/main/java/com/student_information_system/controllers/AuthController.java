@@ -37,6 +37,7 @@ public class AuthController {
 	@PostMapping("/login")
 	public ResponseEntity<Response> loginWithCredentials(@RequestBody Request loginRequest)
 	{
+		System.out.println("Hello Auth");
 		try {
 			projectUserDetails.setRole(loginRequest.getRole());
 			System.err.println(loginRequest);
